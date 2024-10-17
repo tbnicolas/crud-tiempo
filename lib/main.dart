@@ -15,8 +15,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final timeZoneRepository = TimeRepositoryImpl(timeDatasourcesInterface: LocalTimeDatasource());
-    //final timeZoneRepository = TimeRepositoryImpl(timeDatasourcesInterface: ExternalApiDatasource());
+    //final timeZoneRepository = TimeRepositoryImpl(timeDatasourcesInterface: LocalTimeDatasource());
+    final timeZoneRepository = TimeRepositoryImpl(timeDatasourcesInterface: ExternalApiDatasource());
 
     return MultiBlocProvider(
       providers: [
