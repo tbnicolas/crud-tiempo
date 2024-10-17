@@ -1,6 +1,6 @@
 part of 'time_bloc_bloc.dart';
 
-class TimeBlocState extends Equatable {
+class TimeBlocState {
  final List<InfoFecha> infoFechaList;
  final bool isLoading;
 
@@ -15,7 +15,5 @@ class TimeBlocState extends Equatable {
    );
 
 
-  @override
-  List<Object> get props => [];
 }
 
